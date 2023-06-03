@@ -6,7 +6,9 @@ type Props = {}
 
 const RegisterPage = (props: Props) => {
   return (
-    <Page><RegisterForm/></Page>
+    <Page display='flex' justifyContent='center' alignItems='center'>
+      <RegisterForm/>
+    </Page>
   )
 }
 
