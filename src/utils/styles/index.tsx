@@ -71,8 +71,36 @@ position: absolute;
 top: 0px;
 left: 0px;
 border-right: 1px solid #5454543d;
-& header{
-    background-color: #151515;
+overflow-y: scroll;
+&::-webkit-scrollbar{
+    display: none;
+}
+`;
+
+export const ConversationsChanelPageStyled =styled.div`
+height: 100%;
+margin-left: ${SIDEBAR_WIDTH}px;
+`;
+export const ConversationSidebarItem =styled.div`
+display: flex;
+align-items: center;
+gap:20px;
+padding: 10px 20px;
+border-bottom: 1px solid #fff;
+box-sizing: border-box;
+background-color: #5454543d;
+`
+export const ConversationSidebarContainer =styled.div`
+margin-top: 100px;
+`
+export const ConversationSidebarHeader =styled.header`
+position: fixed;
+top: 0;
+left: 0;
+
+width:${SIDEBAR_WIDTH}px;   
+box-sizing: border-box; 
+background-color: #151515;
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -82,12 +110,5 @@ border-right: 1px solid #5454543d;
     & h1{
         font-weight: 400;
     }
-}
-`;
-
-export const ConversationsChanelPageStyled =styled.div`
-height: 100%;
-margin-left: ${SIDEBAR_WIDTH}px;
-`;
-
+`
 export const DARK = '#131313'
