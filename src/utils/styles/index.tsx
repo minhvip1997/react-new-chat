@@ -73,7 +73,11 @@ left: 0px;
 border-right: 1px solid #5454543d;
 overflow-y: scroll;
 &::-webkit-scrollbar{
-    display: none;
+    width: 5px;
+    height: 5px;
+}
+&::-webkit-scrollbar-thumb{
+    background-color: #2d2d2d;
 }
 `;
 

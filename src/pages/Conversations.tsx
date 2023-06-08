@@ -8,7 +8,7 @@ type Props = {}
 
 const Conversations = (props: Props) => {
   const {id} = useParams()
-  // console.log(useParams());
+  console.log(id);
   return (
     <Page>
 
